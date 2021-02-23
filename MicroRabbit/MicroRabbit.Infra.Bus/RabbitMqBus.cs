@@ -51,7 +51,7 @@ namespace MicroRabbit.Infra.Bus
         {
             var eventName = typeof(T).Name;
             var handlerType = typeof(TH);
-
+             
             if (!_eventTypes.Contains(typeof(T)))
             {
                 _eventTypes.Add(typeof(T));
